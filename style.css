@@ -1,0 +1,188 @@
+/* Basic structure */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Navigation Bar */
+
+#nav-bar{
+    float: right;
+}
+
+#nav-bar li{
+    display: inline-block;
+    padding: 8px;
+}
+
+#nav-bar #sign-in {
+    background: lightgray;
+    margin-right: 25px;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#nav-links{
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+li.nav-links a:hover{
+    text-decoration: underline;
+}
+
+#sign-in {
+    color: #fff;
+}
+
+/* Google Area */
+.google #google-logo {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 112px;
+    padding-bottom: 20px;
+}
+
+.search-bar {
+    text-align: center;
+}
+
+#search-bar {
+    width: 450px;
+    line-height: 35px;
+    padding: 20px 10px;
+}
+
+.search-bar #search-bar {
+    padding: 0 8px;
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 300px;
+}
+
+/* Footer */
+
+footer{
+    background: #f2f2f2;
+    border-top: solid 2px black;
+    bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    float: left;
+    padding: 1px;
+}
+
+footer ul a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    float: right;
+}
+
+/* Media Queries */
+
+@media screen and (max width: 400px) {
+
+    li.nav-links a {
+        display: none;
+    }
+
+    #google-logo {
+        padding: 0;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    #search-bar {
+        width: 80%;
+    }
+
+    footer {
+        bottom: 0;
+    }
+
+    footer ul {
+        float: none;
+        padding-bottom: 2px;
+    }
+
+    .footer-left {
+        text-align: center;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .footer-right {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 565px) {
+
+    li.nav-links a {
+        display: none;
+    }
+
+    #google-logo{
+        padding: 0;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    #search-bar {
+        width: 80%;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+    }
+
+    footer ul {
+        float: none;
+        padding-bottom: 2px;
+    }
+
+    .footer-left {
+        text-align: center;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .footer-right {
+        float: none;
+        text-align: center;
+    }
+}
